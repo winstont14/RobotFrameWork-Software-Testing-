@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.10.4 on win32)" generated="2025-06-28T17:54:11.986943" rpa="false" schemaversion="5">
+<suite id="s1" name="loginTestCase" source="C:\Users\Winston\Documents\RobotLearn\testCases\loginTestCase.robot">
+<test id="s1-t1" name="Setup Browser" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:12.175112" level="INFO">Opening browser 'chrome' to base url 'https://business.futureskill.co/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-28T17:54:12.175112" elapsed="1.651963"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>1500</arg>
+<arg>900</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-06-28T17:54:13.828128" elapsed="0.020194"/>
+</kw>
+<status status="PASS" start="2025-06-28T17:54:12.175112" elapsed="1.673210"/>
+</test>
+<test id="s1-t2" name="As a user, I want to login success with valid credential" line="17">
+<kw name="When user login from WebPage with ${email}" owner="LoginPageKeywords copy" source_name="user Login from WebPage with ${username}">
+<kw name="Wait util element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:13.848322" level="INFO">Clicking element 'xpath=//button[span[normalize-space(.)="Login"]]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T17:54:13.848322" elapsed="0.246211"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-06-28T17:54:13.848322" elapsed="0.246211"/>
+</kw>
+<arg>xpath=//button[span[normalize-space(.)="Login"]]</arg>
+<status status="PASS" start="2025-06-28T17:54:13.848322" elapsed="0.246211"/>
+</kw>
+<kw name="Wait util element is ready then Input element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:14.095534" level="INFO">Typing text 'parinda.w@likemeasia.com' into text field 'name=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T17:54:14.095534" elapsed="0.135981"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-06-28T17:54:14.095534" elapsed="0.135981"/>
+</kw>
+<arg>name=email</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2025-06-28T17:54:14.095534" elapsed="0.135981"/>
+</kw>
+<kw name="Wait util element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:14.231515" level="INFO">Clicking element 'xpath=//button[span[normalize-space(.)="Login"]]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T17:54:14.231515" elapsed="0.045226"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-06-28T17:54:14.231515" elapsed="0.045226"/>
+</kw>
+<arg>xpath=//button[span[normalize-space(.)="Login"]]</arg>
+<status status="PASS" start="2025-06-28T17:54:14.231515" elapsed="0.046229"/>
+</kw>
+<status status="PASS" start="2025-06-28T17:54:13.848322" elapsed="0.429422"/>
+</kw>
+<kw name="Then user logIn from WebPage with ${email} and ${valid_password}" owner="LoginPageKeywords copy" source_name="user logIn from WebPage with ${username} and ${password}">
+<kw name="Wait util element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:14.278741" level="INFO">Clicking element 'xpath=//button[./span[text()="Login"]]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T17:54:14.278741" elapsed="0.026434"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-06-28T17:54:14.278741" elapsed="0.026434"/>
+</kw>
+<arg>xpath=//button[./span[text()="Login"]]</arg>
+<status status="PASS" start="2025-06-28T17:54:14.277744" elapsed="0.027431"/>
+</kw>
+<kw name="Wait util element is ready then Input element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:14.305175" level="INFO">Typing text 'parinda.w@likemeasia.com' into text field 'name=email'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T17:54:14.305175" elapsed="0.070993"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-06-28T17:54:14.305175" elapsed="0.070993"/>
+</kw>
+<arg>name=email</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2025-06-28T17:54:14.305175" elapsed="0.070993"/>
+</kw>
+<kw name="Wait util element is ready then Input element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:14.376168" level="INFO">Typing text 'parinda.w' into text field 'name=password'.</msg>
+<msg time="2025-06-28T17:54:14.507493" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-128.png"&gt;&lt;img src="selenium-screenshot-128.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:14.508019" level="FAIL">Element with locator 'name=password' not found.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:14.376168" elapsed="0.133412">Element with locator 'name=password' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:16.518815" level="INFO">Typing text 'parinda.w' into text field 'name=password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T17:54:16.518815" elapsed="0.042626"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-06-28T17:54:14.376168" elapsed="2.185273"/>
+</kw>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-06-28T17:54:14.376168" elapsed="2.185273"/>
+</kw>
+<kw name="Wait util element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:16.561441" level="INFO">Clicking element 'xpath=//button[./span[text()="Login"]]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T17:54:16.561441" elapsed="0.050128"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-06-28T17:54:16.561441" elapsed="0.050128"/>
+</kw>
+<arg>xpath=//button[./span[text()="Login"]]</arg>
+<status status="PASS" start="2025-06-28T17:54:16.561441" elapsed="0.050128"/>
+</kw>
+<status status="PASS" start="2025-06-28T17:54:14.277744" elapsed="2.333825"/>
+</kw>
+<kw name="Then WebPage should display home page and display message as &quot;ภาพรวมการเรียนรู้&quot;" owner="HomePageKeywords" source_name="WebPage should display home page and display message as &quot;${expected_message}&quot;">
+<kw name="Wait util page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:16.793848" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-129.png"&gt;&lt;img src="selenium-screenshot-129.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:16.793848" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.50); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6c09a6f65+76917]
+	GetHandleVerifier [0x0x7ff6c09a6fc0+77008]
+	(No symbol) [0x0x7ff6c0759dea]
+	(No symbol) [0x0x7ff6c0761789]
+	(No symbol) [0x0x7ff6c076482c]
+	(No symbol) [0x0x7ff6c07648ff]
+	(No symbol) [0x0x7ff6c07b3e21]
+	(No symbol) [0x0x7ff6c08027ee]
+	(No symbol) [0x0x7ff6c07d846a]
+	(No symbol) [0x0x7ff6c080065c]
+	(No symbol) [0x0x7ff6c07d8243]
+	(No symbol) [0x0x7ff6c07a1431]
+	(No symbol) [0x0x7ff6c07a21c3]
+	GetHandleVerifier [0x0x7ff6c0c7d29d+3051437]
+	GetHandleVerifier [0x0x7ff6c0c778f3+3028483]
+	GetHandleVerifier [0x0x7ff6c0c9588d+3151261]
+	GetHandleVerifier [0x0x7ff6c09c182e+185662]
+	GetHandleVerifier [0x0x7ff6c09c96ef+218111]
+	GetHandleVerifier [0x0x7ff6c09afae4+112628]
+	GetHandleVerifier [0x0x7ff6c09afc99+113065]
+	GetHandleVerifier [0x0x7ff6c0996c68+10616]
+	BaseThreadInitThunk [0x0x7ffe003553e0+16]
+	RtlUserThreadStart [0x0x7ffe00ea485b+43]
+</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:16.617155" elapsed="0.177694">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=138.0.7204.50); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6c09a6f65+76917]
+	GetHandleVerifier [0x0x7ff6c09a6fc0+77008]
+	(No symbol) [0x0x7ff6c0759dea]
+	(No symbol) [0x0x7ff6c0761789]
+	(No symbol) [0x0x7ff6c076482c]
+	(No symbol) [0x0x7ff6c07648ff]
+	(No symbol) [0x0x7ff6c07b3e21]
+	(No symbol) [0x0x7ff6c08027ee]
+	(No symbol) [0x0x7ff6c07d846a]
+	(No symbol) [0x0x7ff6c080065c]
+	(No symbol) [0x0x7ff6c07d8243]
+	(No symbol) [0x0x7ff6c07a1431]
+	(No symbol) [0x0x7ff6c07a21c3]
+	GetHandleVerifier [0x0x7ff6c0c7d29d+3051437]
+	GetHandleVerifier [0x0x7ff6c0c778f3+3028483]
+	GetHandleVerifier [0x0x7ff6c0c9588d+3151261]
+	GetHandleVerifier [0x0x7ff6c09c182e+185662]
+	GetHandleVerifier [0x0x7ff6c09c96ef+218111]
+	GetHandleVerifier [0x0x7ff6c09afae4+112628]
+	GetHandleVerifier [0x0x7ff6c09afc99+113065]
+	GetHandleVerifier [0x0x7ff6c0996c68+10616]
+	BaseThreadInitThunk [0x0x7ffe003553e0+16]
+	RtlUserThreadStart [0x0x7ffe00ea485b+43]
+</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:18.806769" level="INFO">Current page contains text 'ภาพรวมการเรียนรู้'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-06-28T17:54:18.806769" elapsed="0.000000"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-06-28T17:54:16.617155" elapsed="2.189614"/>
+</kw>
+<arg>${expected_message}</arg>
+<status status="PASS" start="2025-06-28T17:54:16.616622" elapsed="2.190147"/>
+</kw>
+<status status="PASS" start="2025-06-28T17:54:16.611569" elapsed="2.195200"/>
+</kw>
+<kw name="user logout from WebPage" owner="HomePageKeywords" type="TEARDOWN">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait util element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:18.806769" level="INFO">Clicking element 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg'.</msg>
+<msg time="2025-06-28T17:54:18.920801" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-130.png"&gt;&lt;img src="selenium-screenshot-130.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:18.920801" level="FAIL">Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:18.806769" elapsed="0.114032">Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:20.933206" level="INFO">Clicking element 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg'.</msg>
+<msg time="2025-06-28T17:54:21.016666" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-131.png"&gt;&lt;img src="selenium-screenshot-131.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:21.016666" level="FAIL">Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:20.933206" elapsed="0.083460">Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:23.032211" level="INFO">Clicking element 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg'.</msg>
+<msg time="2025-06-28T17:54:23.100411" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-132.png"&gt;&lt;img src="selenium-screenshot-132.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:23.100411" level="FAIL">Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:23.032211" elapsed="0.068200">Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:25.107003" level="INFO">Clicking element 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg'.</msg>
+<msg time="2025-06-28T17:54:25.181319" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-133.png"&gt;&lt;img src="selenium-screenshot-133.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:25.181319" level="FAIL">Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:25.107003" elapsed="0.074316">Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:27.186776" level="INFO">Clicking element 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg'.</msg>
+<msg time="2025-06-28T17:54:27.267940" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-134.png"&gt;&lt;img src="selenium-screenshot-134.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:27.267940" level="FAIL">Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:27.186269" elapsed="0.081671">Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</status>
+</kw>
+<msg time="2025-06-28T17:54:27.267940" level="FAIL">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2025-06-28T17:54:18.806769" elapsed="8.461171">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</status>
+</kw>
+<arg>xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg</arg>
+<status status="FAIL" start="2025-06-28T17:54:18.806769" elapsed="8.461171">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg' not found.</status>
+</kw>
+<arg>CommonKeywords.Wait util element is ready then click element</arg>
+<arg>xpath=//span[contains(text(),"ปริณดา") or contains(text(),"ชื่อผู้ใช้")]/ancestor::div[contains(@class,"dropdown") or contains(@class,"ant-dropdown-trigger")]//svg</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-06-28T17:54:18.806769" elapsed="8.461171"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait util element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:27.267940" level="INFO">Clicking element 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]'.</msg>
+<msg time="2025-06-28T17:54:27.349407" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-135.png"&gt;&lt;img src="selenium-screenshot-135.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:27.349407" level="FAIL">Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:27.267940" elapsed="0.081467">Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:29.362037" level="INFO">Clicking element 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]'.</msg>
+<msg time="2025-06-28T17:54:29.445675" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-136.png"&gt;&lt;img src="selenium-screenshot-136.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:29.445675" level="FAIL">Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:29.362037" elapsed="0.083638">Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:31.471609" level="INFO">Clicking element 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]'.</msg>
+<msg time="2025-06-28T17:54:31.543385" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-137.png"&gt;&lt;img src="selenium-screenshot-137.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:31.543385" level="FAIL">Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:31.471609" elapsed="0.071776">Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:33.551132" level="INFO">Clicking element 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]'.</msg>
+<msg time="2025-06-28T17:54:33.624097" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-138.png"&gt;&lt;img src="selenium-screenshot-138.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:33.624097" level="FAIL">Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:33.551132" elapsed="0.072965">Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:35.627294" level="INFO">Clicking element 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]'.</msg>
+<msg time="2025-06-28T17:54:35.718202" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-139.png"&gt;&lt;img src="selenium-screenshot-139.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:35.718202" level="FAIL">Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:35.627294" elapsed="0.090908">Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</status>
+</kw>
+<msg time="2025-06-28T17:54:35.718202" level="FAIL">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2025-06-28T17:54:27.267940" elapsed="8.450262">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</status>
+</kw>
+<arg>xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]</arg>
+<status status="FAIL" start="2025-06-28T17:54:27.267940" elapsed="8.450262">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]' not found.</status>
+</kw>
+<arg>CommonKeywords.Wait util element is ready then click element</arg>
+<arg>xpath=//button[@aria-label="เมนู"] | //button[@aria-label="Menu"]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-06-28T17:54:27.267940" elapsed="8.450262"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait util element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:35.718202" level="INFO">Clicking element 'xpath=//div[normalize-space(text())="ออกจากระบบ"]'.</msg>
+<msg time="2025-06-28T17:54:35.798408" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-140.png"&gt;&lt;img src="selenium-screenshot-140.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:35.798408" level="FAIL">Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:35.718202" elapsed="0.080206">Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:37.801780" level="INFO">Clicking element 'xpath=//div[normalize-space(text())="ออกจากระบบ"]'.</msg>
+<msg time="2025-06-28T17:54:37.879154" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-141.png"&gt;&lt;img src="selenium-screenshot-141.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:37.879154" level="FAIL">Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:37.801780" elapsed="0.077374">Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:39.888869" level="INFO">Clicking element 'xpath=//div[normalize-space(text())="ออกจากระบบ"]'.</msg>
+<msg time="2025-06-28T17:54:39.959898" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-142.png"&gt;&lt;img src="selenium-screenshot-142.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:39.959898" level="FAIL">Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:39.888869" elapsed="0.071029">Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:41.967330" level="INFO">Clicking element 'xpath=//div[normalize-space(text())="ออกจากระบบ"]'.</msg>
+<msg time="2025-06-28T17:54:42.040443" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-143.png"&gt;&lt;img src="selenium-screenshot-143.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:42.040443" level="FAIL">Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:41.967330" elapsed="0.073113">Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:44.045893" level="INFO">Clicking element 'xpath=//div[normalize-space(text())="ออกจากระบบ"]'.</msg>
+<msg time="2025-06-28T17:54:44.131460" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-144.png"&gt;&lt;img src="selenium-screenshot-144.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:44.131460" level="FAIL">Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:44.045893" elapsed="0.085567">Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</status>
+</kw>
+<msg time="2025-06-28T17:54:44.131460" level="FAIL">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2025-06-28T17:54:35.718202" elapsed="8.414256">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</status>
+</kw>
+<arg>xpath=//div[normalize-space(text())="ออกจากระบบ"]</arg>
+<status status="FAIL" start="2025-06-28T17:54:35.718202" elapsed="8.414256">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//div[normalize-space(text())="ออกจากระบบ"]' not found.</status>
+</kw>
+<arg>CommonKeywords.Wait util element is ready then click element</arg>
+<arg>xpath=//div[normalize-space(text())="ออกจากระบบ"]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-06-28T17:54:35.718202" elapsed="8.414256"/>
+</kw>
+<status status="PASS" start="2025-06-28T17:54:18.806769" elapsed="25.325689"/>
+</kw>
+<status status="PASS" start="2025-06-28T17:54:13.848322" elapsed="30.284136"/>
+</test>
+<test id="s1-t3" name="As a user, I fail to login with invalid credential" line="27">
+<kw name="When user login from WebPage with ${email}" owner="LoginPageKeywords copy" source_name="user Login from WebPage with ${username}">
+<kw name="Wait util element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:44.134460" level="INFO">Clicking element 'xpath=//button[span[normalize-space(.)="Login"]]'.</msg>
+<msg time="2025-06-28T17:54:44.206699" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-145.png"&gt;&lt;img src="selenium-screenshot-145.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:44.206699" level="FAIL">Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:44.134460" elapsed="0.073250">Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:46.220789" level="INFO">Clicking element 'xpath=//button[span[normalize-space(.)="Login"]]'.</msg>
+<msg time="2025-06-28T17:54:46.305978" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-146.png"&gt;&lt;img src="selenium-screenshot-146.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:46.305978" level="FAIL">Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:46.220789" elapsed="0.085189">Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:48.315589" level="INFO">Clicking element 'xpath=//button[span[normalize-space(.)="Login"]]'.</msg>
+<msg time="2025-06-28T17:54:48.389539" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-147.png"&gt;&lt;img src="selenium-screenshot-147.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:48.389539" level="FAIL">Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:48.315589" elapsed="0.073950">Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:50.396949" level="INFO">Clicking element 'xpath=//button[span[normalize-space(.)="Login"]]'.</msg>
+<msg time="2025-06-28T17:54:50.472606" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-148.png"&gt;&lt;img src="selenium-screenshot-148.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:50.472606" level="FAIL">Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:50.396949" elapsed="0.075657">Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T17:54:52.477714" level="INFO">Clicking element 'xpath=//button[span[normalize-space(.)="Login"]]'.</msg>
+<msg time="2025-06-28T17:54:52.551025" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-149.png"&gt;&lt;img src="selenium-screenshot-149.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T17:54:52.551025" level="FAIL">Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T17:54:52.477714" elapsed="0.073311">Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</status>
+</kw>
+<msg time="2025-06-28T17:54:52.551025" level="FAIL">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2025-06-28T17:54:44.134460" elapsed="8.416565">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</status>
+</kw>
+<arg>xpath=//button[span[normalize-space(.)="Login"]]</arg>
+<status status="FAIL" start="2025-06-28T17:54:44.133461" elapsed="8.417564">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</status>
+</kw>
+<kw name="Wait util element is ready then Input element" owner="CommonKeywords">
+<arg>name=email</arg>
+<arg>${username}</arg>
+<status status="NOT RUN" start="2025-06-28T17:54:52.551025" elapsed="0.000000"/>
+</kw>
+<kw name="Wait util element is ready then click element" owner="CommonKeywords">
+<arg>xpath=//button[span[normalize-space(.)="Login"]]</arg>
+<status status="NOT RUN" start="2025-06-28T17:54:52.551025" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-06-28T17:54:44.133461" elapsed="8.417564">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</status>
+</kw>
+<kw name="Then user logIn from WebPage with ${email} and ${Invalid_password}" owner="LoginPageKeywords copy" source_name="user logIn from WebPage with ${username} and ${password}">
+<status status="NOT RUN" start="2025-06-28T17:54:52.551025" elapsed="0.000000"/>
+</kw>
+<kw name="WebPage should display validate login fail message as &quot;กรอกรหัสผ่านไม่ถูกต้อง&quot;" owner="LoginPageKeywords copy" source_name="WebPage should display validate login fail message as ${expected_message}">
+<status status="NOT RUN" start="2025-06-28T17:54:52.551025" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-06-28T17:54:44.133461" elapsed="8.417564">Keyword 'Click Element' failed after retrying 5 times. The last error was: Element with locator 'xpath=//button[span[normalize-space(.)="Login"]]' not found.</status>
+</test>
+<status status="FAIL" start="2025-06-28T17:54:11.986943" elapsed="40.564082"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="loginTestCase" id="s1" pass="2" fail="1" skip="0">loginTestCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
