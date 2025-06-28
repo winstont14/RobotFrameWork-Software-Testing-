@@ -1,3 +1,8 @@
-email: test
-valid_password: test
+email: anunda56@gmail.com
+valid_password: anunda56
 invalid_password: test
+firstName: Ananda
+lastName: Aiemvong
+phoneNumber: 0957612651
+newPassword: Ananda56@4321
+confirmPassword: Ananda56@4321
